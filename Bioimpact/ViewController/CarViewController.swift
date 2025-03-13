@@ -3,10 +3,9 @@ import UIKit
 class CarViewController: UIViewController {
     
     @IBOutlet weak var Calcular: UIButton!
-    
     @IBOutlet weak var resultLabel: UILabel!
-    
     @IBOutlet weak var InsiraDistancia: UITextField!
+    @IBOutlet weak var Frequencia: UISegmentedControl!
     
     let apiService = CarbonAPIService()
 
@@ -24,9 +23,25 @@ class CarViewController: UIViewController {
             return
         }
 
-        print("📤 Enviando requisição para API com distância: \(distance) km")
+        // 📌 Definir multiplicador de acordo com a frequência
+        let frequenciaSelecionada = Frequencia.selectedSegmentIndex
+        let multiplicador: Double
+        
+        switch frequenciaSelecionada {
+        case 0: // Semanal
+            multiplicador = 7
+        case 1: // Mensal
+            multiplicador = 20
+        case 2: // Único
+            multiplicador = 1
+        default:
+            multiplicador = 1
+        }
 
-        apiService.fetchCarbonEstimate(distance: distance) { result in
+        let distanciaTotal = distance * multiplicador
+        print("📤 Enviando requisição para API com distância total: \(distanciaTotal) km")
+
+        apiService.fetchCarbonEstimate(distance: distanciaTotal) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let carbonKg):
