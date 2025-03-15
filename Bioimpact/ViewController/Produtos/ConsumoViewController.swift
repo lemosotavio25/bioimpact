@@ -1,11 +1,24 @@
 import UIKit
 
+<<<<<<< HEAD
 class ConsumoViewController: UIViewController {
 
     @IBOutlet weak var co2TotalLabel: UILabel!
     @IBOutlet weak var embalagensTotalLabel: UILabel!
 
     var produtosConsumidos: [[String: String]] = [] // Recebe a lista de produtos
+=======
+class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    @IBOutlet weak var co2TotalLabel: UILabel!
+    @IBOutlet weak var embalagensTotalLabel: UILabel!
+    @IBOutlet weak var comprovanteImageView: UIImageView! // Exibir a imagem do comprovante
+    
+
+
+
+    var produtosConsumidos: [[String: String]] = [] // Lista de produtos consumidos (Nome + Embalagem)
+>>>>>>> d89eb4d (Initial Commit)
 
     let impactoCO2PorProduto: [String: Double] = [
         "Refrigerante": 0.8,
@@ -36,6 +49,11 @@ class ConsumoViewController: UIViewController {
             ["nome": "Queijo", "embalagem": "Plástico"],
             ["nome": "Macarrão", "embalagem": "Plástico"]
         ]
+<<<<<<< HEAD
+=======
+        
+        comprovanteImageView.image = UIImage(named: "cumpom_fiscal")
+>>>>>>> d89eb4d (Initial Commit)
     }
 
     @IBAction func calcularImpacto(_ sender: UIButton) {
@@ -60,4 +78,58 @@ class ConsumoViewController: UIViewController {
         co2TotalLabel.text = "🌍 Total de CO₂: \(totalCO2) kg"
         embalagensTotalLabel.text = "📦 Embalagens usadas: \(totalEmbalagens)"
     }
+<<<<<<< HEAD
+=======
+
+    // 🔹 Função para adicionar um comprovante (tirar foto ou escolher da galeria)
+    @IBAction func addComprovante(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Adicionar Comprovante", message: "De onde você quer pegar o comprovante?", preferredStyle: .actionSheet)
+
+        // 📸 Opção: Tirar foto com a câmera
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraAction = UIAlertAction(title: "Câmera", style: .default) { (_) in
+                self.abrirImagePicker(tipo: .camera)
+            }
+            alert.addAction(cameraAction)
+        }
+
+        // 🖼️ Opção: Escolher da galeria
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let galeriaAction = UIAlertAction(title: "Galeria", style: .default) { (_) in
+                self.abrirImagePicker(tipo: .photoLibrary)
+            }
+            alert.addAction(galeriaAction)
+        }
+
+        // ❌ Opção: Cancelar
+        let cancelarAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        alert.addAction(cancelarAction)
+
+        present(alert, animated: true, completion: nil)
+    }
+
+    // 🔹 Função para abrir o ImagePicker (Câmera ou Galeria)
+    func abrirImagePicker(tipo: UIImagePickerController.SourceType) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = tipo
+        picker.allowsEditing = true // Permite edição da imagem
+        present(picker, animated: true, completion: nil)
+    }
+
+    // 🔹 Captura da imagem escolhida
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imagemEscolhida = info[.editedImage] as? UIImage {
+            comprovanteImageView.image = imagemEscolhida
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            comprovanteImageView.image = originalImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+
+    // 🔹 Cancelamento do ImagePicker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+>>>>>>> d89eb4d (Initial Commit)
 }
