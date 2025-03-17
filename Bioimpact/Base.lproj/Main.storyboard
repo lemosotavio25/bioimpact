@@ -256,11 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABN-5j-5ef">
-<<<<<<< HEAD
-                                <rect key="frame" x="108.58100902669139" y="401.00000000014461" width="192.99999999982583" height="51.000000000022965"/>
-=======
                                 <rect key="frame" x="91.260252583068905" y="583.00000000002581" width="192.99999999982583" height="51.000000000022965"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Adicionar produtos">
@@ -271,33 +267,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insira aqui a foto de sua nota fiscal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-p7-8iU">
-<<<<<<< HEAD
-                                <rect key="frame" x="63.581009026707306" y="157.00000000005639" width="281" height="21"/>
-=======
                                 <rect key="frame" x="54.84126160977462" y="157.00000000006321" width="281" height="21"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coloque manualmente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-7h-DHH">
-<<<<<<< HEAD
-                                <rect key="frame" x="108.58100902669139" y="337.00000000012142" width="183" height="21"/>
-=======
                                 <rect key="frame" x="91.260252583068905" y="519.00000000002296" width="183" height="21"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5y-3D-2vZ">
-<<<<<<< HEAD
-                                <rect key="frame" x="150.58100902667638" y="489.00000000017621" width="108" height="41.000000000014552"/>
-=======
                                 <rect key="frame" x="133.26025258307072" y="671.00000000002967" width="108" height="41.000000000018645"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calcular">
@@ -309,33 +293,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a4-NO-bOy">
-<<<<<<< HEAD
-                                <rect key="frame" x="123.58100902668639" y="580.00000000020896" width="162.99999999988404" height="39.00000000001387"/>
-=======
                                 <rect key="frame" x="114.8412616097562" y="580.00000000023488" width="162.99999999991587" height="39.00000000001387"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvp-wp-e3J">
-<<<<<<< HEAD
-                                <rect key="frame" x="123.58100902668639" y="670.00000000024136" width="171.99999999987767" height="68.000000000024215"/>
-=======
                                 <rect key="frame" x="114.8412616097562" y="670.00000000027114" width="171.99999999991132" height="68.000000000030809"/>
->>>>>>> d89eb4d (Initial Commit)
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="camera_icon" translatesAutoresizingMaskIntoConstraints="NO" id="SNT-u6-ECg">
-                                <rect key="frame" x="150" y="217" width="97" height="71.000000000025238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-=======
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-gY-tIH">
                                 <rect key="frame" x="62.26025258306754" y="215.00000000000932" width="240" height="128.00000000002501"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -351,7 +321,6 @@
                                     <action selector="addComprovante:" destination="4ia-aD-628" eventType="touchUpInside" id="LpE-Rr-N7n"/>
                                 </connections>
                             </button>
->>>>>>> d89eb4d (Initial Commit)
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9ND-LF-5yV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -359,10 +328,7 @@
                     <navigationItem key="navigationItem" id="meF-MQ-0Zc"/>
                     <connections>
                         <outlet property="co2TotalLabel" destination="9a4-NO-bOy" id="RZ8-no-P2V"/>
-<<<<<<< HEAD
-=======
                         <outlet property="comprovanteImageView" destination="NTV-gY-tIH" id="YZC-I9-gHP"/>
->>>>>>> d89eb4d (Initial Commit)
                         <outlet property="embalagensTotalLabel" destination="tvp-wp-e3J" id="kbX-Pv-Tje"/>
                     </connections>
                 </viewController>
@@ -623,10 +589,6 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
-        <image name="camera_icon" width="50" height="50"/>
-=======
->>>>>>> d89eb4d (Initial Commit)
         <image name="icon_no_bg" width="500" height="500"/>
         <image name="planta" width="554" height="585"/>
         <systemColor name="systemBackgroundColor">

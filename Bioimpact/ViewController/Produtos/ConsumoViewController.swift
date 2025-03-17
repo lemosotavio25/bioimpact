@@ -1,13 +1,5 @@
 import UIKit
 
-<<<<<<< HEAD
-class ConsumoViewController: UIViewController {
-
-    @IBOutlet weak var co2TotalLabel: UILabel!
-    @IBOutlet weak var embalagensTotalLabel: UILabel!
-
-    var produtosConsumidos: [[String: String]] = [] // Recebe a lista de produtos
-=======
 class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var co2TotalLabel: UILabel!
@@ -18,7 +10,6 @@ class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, 
 
 
     var produtosConsumidos: [[String: String]] = [] // Lista de produtos consumidos (Nome + Embalagem)
->>>>>>> d89eb4d (Initial Commit)
 
     let impactoCO2PorProduto: [String: Double] = [
         "Refrigerante": 0.8,
@@ -49,11 +40,8 @@ class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, 
             ["nome": "Queijo", "embalagem": "Plástico"],
             ["nome": "Macarrão", "embalagem": "Plástico"]
         ]
-<<<<<<< HEAD
-=======
         
         comprovanteImageView.image = UIImage(named: "cumpom_fiscal")
->>>>>>> d89eb4d (Initial Commit)
     }
 
     @IBAction func calcularImpacto(_ sender: UIButton) {
@@ -78,8 +66,6 @@ class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, 
         co2TotalLabel.text = "🌍 Total de CO₂: \(totalCO2) kg"
         embalagensTotalLabel.text = "📦 Embalagens usadas: \(totalEmbalagens)"
     }
-<<<<<<< HEAD
-=======
 
     // 🔹 Função para adicionar um comprovante (tirar foto ou escolher da galeria)
     @IBAction func addComprovante(_ sender: UIButton) {
@@ -131,5 +117,4 @@ class ConsumoViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
->>>>>>> d89eb4d (Initial Commit)
 }

@@ -21,12 +21,9 @@
 			</array>
 		</dict>
 	</dict>
-<<<<<<< HEAD
-=======
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
->>>>>>> d89eb4d (Initial Commit)
 </dict>
 </plist>
